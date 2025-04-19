@@ -1,1 +1,1 @@
-from .cli import app
+from masonml.cli import app

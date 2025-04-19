@@ -1,10 +1,10 @@
 import typer
+from masonml.commands import init
 
 app = typer.Typer()
 
-@app.command()
-def init(project_name: str):
-    typer.echo(f"Initializing project: {project_name}")
+app.command()(init)
+
 
 if __name__ == "__main__":
     app()
