@@ -21,3 +21,17 @@ def detect_cuda_version():
         return match.group(1)
     else:
         raise ValueError("CUDA version not found in nvidia-smi output")
+
+
+def validate_python_version_format(python_version: str) -> bool:
+    """
+    Validate the Python version format.
+    """
+    pattern = r"^\d+\.\d+(\.\d+)?$"
+    if re.match(pattern, python_version):
+        return True
+    else:
+        print(
+            "[bold red]Invalid Python version format! Use 'X.Y' or 'X.Y.Z'[/bold red]"
+        )
+        return False

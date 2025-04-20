@@ -1,5 +1,4 @@
 typer[all]>=0.9
-rich  # for pretty CLI output (optional but nice)
-py-cpuinfo  # for CPU/gpu detection
-requests  # for optional online queries (e.g. version compat)
-pyyaml  # for working with environment.yml files
+rich
+pyyaml 
+pydantic
