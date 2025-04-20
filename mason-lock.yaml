@@ -1,0 +1,9 @@
+conda_env_name: TEST
+packages: []
+system_info:
+  cuda_version: null
+  os: Windows
+  python_version:
+  - 3
+  - 13
+  - 2

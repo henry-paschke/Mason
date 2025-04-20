@@ -1,10 +1,8 @@
 import typer
-from masonml.commands import init
+from masonml.commands import init, delete
 
 app = typer.Typer()
 
+
 app.command()(init)
-
-
-if __name__ == "__main__":
-    app()
+app.command()(delete)
